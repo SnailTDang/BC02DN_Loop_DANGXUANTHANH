@@ -141,3 +141,69 @@ electricNumber.addEventListener("keyup", (e) => {
     electricBill;
   }
 });
+
+// GIAI THỪA
+
+const facInput = document.querySelector(".factorial-number");
+const facButton = document.querySelector("#factorial-button");
+const facResult = document.querySelector("#result-factorial");
+
+function factorialNum() {
+  let facNumber = Number(facInput.value);
+  let facTotal = 1;
+  for (let i = 1; i <= facNumber; i++) {
+    facTotal *= i;
+  }
+  facResult.innerText = "Giai thừa:   " + facTotal;
+}
+
+facButton.addEventListener("click", factorialNum);
+
+// TẠO THẺ DIV
+
+const resultDiv = document.querySelector("#result-creatdiv");
+const createdivButton = document.querySelector("#creatdiv-button");
+
+function createDiv() {
+  let newDiv = [];
+  for (i = 1; i <= 10; i++) {
+    if (i % 2 == 0) {
+      newDiv.push('<div class="even-div">Div chẳn</div>');
+    } else {
+      newDiv.push('<div class="odd-div">Div lẻ</div>');
+    }
+  }
+  console.log(newDiv);
+  resultDiv.innerHTML = newDiv.join("");
+}
+
+createdivButton.addEventListener("click", createDiv);
+
+// IN SỐ NGUYÊN TỐ
+
+const primeInput = document.querySelector(".prime-number");
+const primeButton = document.querySelector("#prime-button");
+const primeResult = document.querySelector("#result-prime");
+
+function primeNumber() {
+  let numberInput = primeInput.value;
+  let primeArray = [];
+  if (numberInput < 2) {
+    primeResult.innerText = "Nhập số lớn hơn 2";
+  } else {
+    for (let i = 2; i <= numberInput; i++) {
+      let count = 0;
+      for (let j = 2; j <= Math.sqrt(i); j++) {
+        if (i % j == 0) {
+          count++;
+        }
+      }
+      if (count == 0) {
+        primeArray.push(i);
+      }
+    }
+    primeResult.innerText = `Số nguyên tố: ${primeArray.join(" ")}`;
+  }
+}
+
+primeButton.addEventListener("click", primeNumber);

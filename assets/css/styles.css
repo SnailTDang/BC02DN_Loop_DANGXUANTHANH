@@ -149,17 +149,36 @@ li.active span {
 .result-output span {
   display: block;
 }
-  
+
 .connect {
   display: none;
 }
 
 .part2,
 .part3,
-.part4 {
+.part4,
+.part5,
+.part6,
+.part7 {
   display: none;
 }
 
 .open {
   display: block !important;
+}
+
+#result-creatdiv > div {
+  color: #fff;
+  line-height: 30px;
+  height: 30px;
+  padding: 0 10px;
+  margin: 5px 0;
+}
+
+.odd-div {
+  background-color: #fd290d;
+}
+
+.even-div {
+  background-color: #0d6efd;
 }
