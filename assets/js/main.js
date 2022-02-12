@@ -1,5 +1,4 @@
-//ĐIỂM ĐẠI HỌC
-const benchmarks = document.querySelector("#benchmarks");
+//IN SỐ CHẴN/LẺ
 const evenOutput = document.querySelector(".even-number");
 const oldOutput = document.querySelector(".old-number");
 const resultSubmit = document.querySelector("#daihoc-button");
@@ -35,27 +34,16 @@ function innerResult() {
       oldNumber += i + " ";
     }
   }
+  console.log(typeof evenNumber);
   evenOutput.innerText = "Số chẵn:  " + evenNumber;
   oldOutput.innerText = "Số lẻ:  " + oldNumber;
 }
 
 resultSubmit.addEventListener("click", innerResult);
 
-//TIỀN CÁP
-
-const userType = document.querySelector("#type-user");
-const userId = document.querySelector("#user-id");
-const userChannel = document.querySelector(".channels");
-const userConnect = document.querySelector(".connect");
+//ĐẾM SỐ CHIA HẾT CHO 3
 const tiencapButton = document.querySelector("#tiencap-button");
 const resultTienCap = document.querySelector("#result-tiencap");
-const popularFee = 4.5;
-const businessFee = 15;
-const popularChannel = 7.5;
-const businessChannel = 50;
-const popularBasic = 20.5;
-const first10Connect = 75;
-const businessConnect = 5;
 
 function tinhtienCap() {
   let numberCount = 0;
@@ -84,15 +72,10 @@ menuExercises.forEach((e, index) => {
   });
 });
 
-// TIỀN THUẾ
+// TÌM SỐ NGUYÊN DƯƠNG NHỎ NHẤT
 
-const userIncome = document.querySelector(".income");
-const userName = document.querySelector("#user-name");
-const dependentPerson = document.querySelector(".people");
 const tienthueButton = document.querySelector("#tienthue-button");
 const resultTienThue = document.querySelector("#result-tienthue");
-const dependentCost = 1.6e6;
-const moneyOffset = 4e6;
 
 function tienThue() {
   let minNumber;
@@ -109,21 +92,12 @@ function tienThue() {
 
 tienthueButton.addEventListener("click", tienThue);
 
-//TIỀN ĐIỀN
+//TÍNH TỔNG
 
 const userNameElectric = document.querySelector("#user-name2");
 const electricNumber = document.querySelector(".electric-number");
 const electricButton = document.querySelector("#tiendien-button");
 const resultTienDien = document.querySelector("#result-tiendien");
-const first50Kwh = 500;
-const second50Kwh = 650;
-const third50Kwh = 850;
-const fourth50Kwh = 1100;
-const remainKwh = 1300;
-const first50KwhCost = first50Kwh * 50;
-const second50KwhCost = second50Kwh * 50;
-const third50KwhCost = third50Kwh * 100;
-const fourth50KwhCost = fourth50Kwh * 150;
 
 function electricBill() {
   let nNumber = Number(electricNumber.value);

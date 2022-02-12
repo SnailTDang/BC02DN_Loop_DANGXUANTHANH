@@ -82,7 +82,7 @@
             <div class="exercises-sovle">
               <form action="javascript:void(0);">
                 <div class="button-submit">
-                  <button type="submit" id="daihoc-button">Kết quả</button>
+                  <button type="submit" id="daihoc-button">Xem Kết quả</button>
                 </div>
                 <div class="result-output">
                   <span class="even-number"></span
@@ -93,7 +93,7 @@
           </div>
           <div class="exercises-content part2">
             <div class="exercises-heading">
-              <h2 class="header">Tính tiền Cáp</h2>
+              <h2 class="header">2️⃣ Đếm số chia hết cho 3</h2>
               <div class="header-suggest">
                 <h3>Gợi ý:</h3>
                 <div class="summary">
@@ -121,34 +121,8 @@
             </div>
             <div class="exercises-sovle">
               <form action="javascript:void(0);">
-                <div class="user-enter">
-                  <select id="type-user" name="area">
-                    <option value="0">Chọn loại khách hàng</option>
-                    <option value="1">Nhà dân</option>
-                    <option value="2">Doanh Nghiệp</option>
-                  </select>
-                  <input
-                    type=""
-                    id="user-id"
-                    placeholder="Nhập mã khách hàng"
-                  />
-                  <input
-                    type="number"
-                    class="channels"
-                    placeholder="Số kênh cao cấp"
-                    step="1"
-                  />
-                  <input
-                    type="number"
-                    class="connect"
-                    placeholder="Số kết nối"
-                    step="1"
-                  />
-                </div>
                 <div class="button-submit">
-                  <button type="submit" id="tiencap-button">
-                    Tính tiền cáp
-                  </button>
+                  <button type="submit" id="tiencap-button">Xem kết quả</button>
                 </div>
                 <div class="result-output">
                   <span class="message"></span
@@ -159,49 +133,19 @@
           </div>
           <div class="exercises-content part3">
             <div class="exercises-heading">
-              <h2 class="header">Thuế thu nhập cá nhân</h2>
+              <h2 class="header">3️⃣ Tìm số nguyên dương nhỏ nhất</h2>
               <div class="header-suggest">
                 <h3>Gợi ý:</h3>
                 <div class="summary">
                   <h4 class="summary-title">Mở rộng để xem thêm</h4>
                   <ul class="summary-list">
                     <li>
-                      <p>
-                        Tổng thu nhập năm các bạn tự nhập thêm. Giả sử 1 tháng
-                        thu nhập 10tr thì 1 năm sẽ là 10 x 12 = 120tr => các bạn
-                        sẽ nhập 120000000
-                      </p>
+                      <p>Điều kiện tiếp tục vòng lặp là sum < 10000</p>
                     </li>
                     <li>
                       <p>
-                        Demo hiện tại đang tính % thuế theo điều kiện mà thu
-                        nhập chịu thuế rơi vào. Vd: thu nhập chịu thuế là 110tr
-                        thì tính 10% của 110tr => 110tr * 0.1
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Do đề bài không ghi rõ yêu cầu tính thuế nên cũng có thể
-                        tính theo cách chia ra từng đoạn thuế giống bài tính
-                        tiền grab. Vd: 110tr => 60tr *0.05 + (110tr-60tr) * 0.1
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Sử dụng input có type number thì khi nhập 120000000, có
-                        thể nhập ngắn gọn thành 120e+6
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Đối với các con số hàng triệu có nhiều số 0, có thể viết
-                        ngắn gọn trong code như sau: 4tr => 4000000 => 4e+6
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Dùng NumberFormat để số tiền hiển thị đẹp hơn:
-                        NumberFormat
+                        sum sẽ là tổng cộng dồn của biến bước nhảy sau mỗi lần
+                        lặp
                       </p>
                     </li>
                   </ul>
@@ -210,26 +154,9 @@
             </div>
             <div class="exercises-sovle">
               <form action="javascript:void(0);">
-                <div class="user-enter">
-                  <input type="" id="user-name" placeholder="Nhập họ tên" />
-                  <input
-                    type="number"
-                    class="income"
-                    placeholder="Tổng thu nhập năm"
-                    step="0.5e+6"
-                    min="0"
-                  />
-                  <input
-                    type="number"
-                    class="people"
-                    placeholder="Số người phụ thuộc"
-                    step="1"
-                    min="0"
-                  />
-                </div>
                 <div class="button-submit">
                   <button type="submit" id="tienthue-button">
-                    Tính tiền thuế
+                    Xem kết quả
                   </button>
                 </div>
                 <div class="result-output">
@@ -241,7 +168,7 @@
           </div>
           <div class="exercises-content part4">
             <div class="exercises-heading">
-              <h2 class="header">Tính tiền điện</h2>
+              <h2 class="header">4️⃣ Tính tổng</h2>
               <div class="header-suggest">
                 <h3>Gợi ý:</h3>
                 <div class="summary">
@@ -249,8 +176,8 @@
                   <ul class="summary-list">
                     <li>
                       <p>
-                        Cách tính tiền điện gần giống với bài tính tiền Grab
-                        trên lớp
+                        Sử dụng các toán tử sau để tính lũy thừa: Math.pow hoặc
+                        **
                       </p>
                     </li>
                   </ul>
@@ -276,7 +203,7 @@
                 </div>
                 <div class="button-submit">
                   <button type="submit" id="tiendien-button">
-                    Tính tiền thuế
+                    Xem kết quả
                   </button>
                 </div>
                 <div class="result-output">
@@ -288,7 +215,7 @@
           </div>
           <div class="exercises-content part5">
             <div class="exercises-heading">
-              <h2 class="header">Tính giai thừa</h2>
+              <h2 class="header">5️⃣ Tính giai thừa</h2>
             </div>
             <div class="exercises-sovle">
               <form action="javascript:void(0);">
@@ -303,7 +230,7 @@
                 </div>
                 <div class="button-submit">
                   <button type="submit" id="factorial-button">
-                    Tính tiền thuế
+                    Xem kết quả
                   </button>
                 </div>
                 <div class="result-output">
@@ -314,7 +241,7 @@
           </div>
           <div class="exercises-content part6">
             <div class="exercises-heading">
-              <h2 class="header">Tính tiền điện</h2>
+              <h2 class="header">6️⃣ Tạo thẻ div</h2>
               <div class="header-suggest">
                 <h3>Gợi ý:</h3>
                 <div class="summary">
@@ -340,7 +267,7 @@
               <form action="javascript:void(0);">
                 <div class="button-submit">
                   <button type="submit" id="creatdiv-button">
-                    Tính tiền thuế
+                    Xem kết quả
                   </button>
                 </div>
                 <div class="result-output" id="result-creatdiv"></div>
@@ -349,7 +276,7 @@
           </div>
           <div class="exercises-content part7">
             <div class="exercises-heading">
-              <h2 class="header">Tính giai thừa</h2>
+              <h2 class="header">7️⃣ In số nguyên tố</h2>
               <div class="header-suggest">
                 <h3>Gợi ý:</h3>
                 <div class="summary">
@@ -388,9 +315,7 @@
                   />
                 </div>
                 <div class="button-submit">
-                  <button type="submit" id="prime-button">
-                    Tính tiền thuế
-                  </button>
+                  <button type="submit" id="prime-button">Xem kết quả</button>
                 </div>
                 <div class="result-output">
                   <span class="result-inner" id="result-prime"></span>
